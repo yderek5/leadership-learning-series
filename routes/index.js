@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    res.send('This is the express backend server');
+});
 
+// Post for contact form
+router.post('/contact/api', function(req, res, next) {
+    
 });
 
 module.exports = router;
