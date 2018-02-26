@@ -23,7 +23,6 @@ class Contact extends React.Component {
         e.preventDefault();
 
         const {name, email, message} = this.state;
-        console.log(this.state);
         axios.post('http://localhost:3001/contact/api', {name, email, message})
         .then(res => {
             res.json();
