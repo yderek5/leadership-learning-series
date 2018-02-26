@@ -7,8 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 // Post for contact form
-router.post('/contact/api', function(req, res, next) {
-    
-});
+router.route('/contact/api')
+    .get(function(req, res, next) {
+        res.send('contact/api route');
+    })
+    .post(require('../logic/contactForm').sendEmail)
 
 module.exports = router;
