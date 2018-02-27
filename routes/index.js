@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* This is just here to check if the backend is running */
 router.get('/', function(req, res, next) {
     res.send('This is the express backend server');
 });
