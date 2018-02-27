@@ -1,34 +1,69 @@
 import React from 'react';
 import './register.css';
+import axios from 'axios';
 
-const Register = (props) => {
-    return(
-    <form className="container" method="post" action="/users/register" enctype="multipart/form-data">
-    <h1> Register</h1>
-    <p> Please Register using the form below</p>
-    <div class="form-group"></div>
-    <label for="name">Name:</label>
-    <input id="name" type="text" placeholder="Enter Name" name="name" class="form-control" />
-    <div class="form-group"></div>
-    <label for="email">Email:</label>
-    <input id="email" type="email" placeholder="Enter Email" name="email" class="form-control" />
-    <div class="form-group"></div>
-    <label for="username">Username:</label>
-    <input id="username" type="text" placeholder="Enter Username" name="username" class="form-control" />
-    <div class="form-group"></div>
-    <label for="password">Password:</label>
-    <input id="password" type="password" placeholder="Enter Password" name="password" class="form-control" />
-    <div class="form-group"></div>
-    <label for="confirmPassword">Confirm Password:</label>
-    <input id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword"
-        class="form-control" />
-    <div class="form-group"></div>
-    <label for="profile">Profile Image:</label>
-    <input id="profile" type="file" name="profile" class="form-control" />
-    <br />
-    <button type="submit" class="btn btn-primary">Register</button>
-    </form>
-    )
+class Register extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            email: '',
+            username: '',
+            password: '',
+            confirmPassword: '',
+            profile: ''
+        }
+    }
+
+    onChange = (e) => {
+        const state = this.state;
+        state[e.target.name] = e.target.value;
+        this.setState(state)
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+
+        const {name, email, username, password, confirmPassword, profile} = this.state;
+        console.log(this.state);
+
+        axios.post('http://localhost:3001/users/register', 
+        {name, email, username, password, confirmPassword, profile})
+        .then(res => {
+            res.json();
+        })
+        .catch(err => console.log(err));
+    }
+
+    render() {
+        return(
+        <form onSubmit={this.onSubmit} className="container">
+        <h1> Register</h1>
+        <p> Please Register using the form below</p>
+        <div className="form-group"></div>
+        <label htmlFor="name">Name:</label>
+        <input onChange={this.onChange} id="name" type="text" placeholder="Enter Name" name="name" className="form-control" />
+        <div className="form-group"></div>
+        <label htmlFor="email">Email:</label>
+        <input onChange={this.onChange} id="email" type="email" placeholder="Enter Email" name="email" className="form-control" />
+        <div className="form-group"></div>
+        <label htmlFor="username">Username:</label>
+        <input onChange={this.onChange} id="username" type="text" placeholder="Enter Username" name="username" className="form-control" />
+        <div className="form-group"></div>
+        <label htmlFor="password">Password:</label>
+        <input onChange={this.onChange} id="password" type="password" placeholder="Enter Password" name="password" className="form-control" />
+        <div className="form-group"></div>
+        <label htmlFor="confirmPassword">Confirm Password:</label>
+        <input onChange={this.onChange} id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword"
+            className="form-control" />
+        <div className="form-group"></div>
+        <label htmlFor="profile">Profile Image:</label>
+        <input onChange={this.onChange} id="profile" type="file" name="profile" className="form-control" />
+        <br />
+        <button type="submit" className="btn btn-primary">Register</button>
+        </form>
+        );
+    }
 }
 
 export default Register;
