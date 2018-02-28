@@ -12,7 +12,7 @@ module.exports = {
         var username = req.body.username;
         var password = req.body.password;
         var confirmPassword = req.body.confirmPassword;
-
+        var mail = req.body.mail;
 
         // //Check for IMage Field
         // if (req.files.length != 0) {
@@ -48,7 +48,8 @@ module.exports = {
                 email: email,
                 username: username,
                 password: password,
-                confirmPassword: confirmPassword
+                confirmPassword: confirmPassword,
+                mail: mail,
             });
         } else {
             //Creating a Modal for New User
@@ -57,6 +58,7 @@ module.exports = {
                 email: email,
                 username: username,
                 password: password,
+                mail: mail,
             });
 
             //Create User

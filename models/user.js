@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://admin:god@ds249818.mlab.com:49818/userauth');
+mongoose.connect('mongodb://admin:seth@ds147668.mlab.com:47668/leadershiplearning');
 
 var db = mongoose.connection;
 
@@ -18,7 +18,7 @@ var UserSchema = mongoose.Schema({
     },
     email: String,
     name: String,
-    profile: String
+    mail: Boolean,
 });
 
 module.exports = mongoose.model('User', UserSchema);
