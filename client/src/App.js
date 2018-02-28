@@ -14,6 +14,8 @@ import Consulting from './components/ServicesConsulting';
 import Articles from './components/ResourcesArticles';
 import Worksheets from './components/ResourcesWorksheets';
 import Prep from './components/ResourcesPrep';
+import Register from './components/Register';
+import Login from './components/Login';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -103,6 +105,24 @@ class App extends Component {
                   Prep
                 </TitleBanner>
                 <Prep />
+              </div>
+            </Route>
+
+            <Route exact path='/register'>
+              <div className="wrapper">
+                <TitleBanner>
+                  Register
+                </TitleBanner>
+                <Register />
+              </div>
+            </Route>
+
+            <Route exact path='/login'>
+              <div className="wrapper">
+                <TitleBanner>
+                  Login
+                </TitleBanner>
+                <Login />
               </div>
             </Route>
 
