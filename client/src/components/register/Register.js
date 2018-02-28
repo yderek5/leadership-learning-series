@@ -11,7 +11,7 @@ class Register extends React.Component {
             username: '',
             password: '',
             confirmPassword: '',
-            profile: ''
+            mail: false 
         }
     }
 
@@ -24,11 +24,11 @@ class Register extends React.Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        const {name, email, username, password, confirmPassword, profile} = this.state;
+        const {name, email, username, password, confirmPassword, mail} = this.state;
         console.log(this.state);
 
         axios.post('http://localhost:3001/users/register', 
-        {name, email, username, password, confirmPassword, profile})
+        {name, email, username, password, confirmPassword, mail})
         .then(res => {
             res.json();
         })
@@ -57,8 +57,11 @@ class Register extends React.Component {
         <input onChange={this.onChange} id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword"
             className="form-control" />
         <div className="form-group"></div>
-        <label htmlFor="profile">Profile Image:</label>
-        <input onChange={this.onChange} id="profile" type="file" name="profile" className="form-control" />
+        <input onChange={this.onChange} id="mail" type="radio" name="mail" value="true" />
+        <label for="radio1">Please Add me to your Mailing List</label>
+        <br />
+        <input onChange={this.onChange} id="nomail" type="radio" name="mail" value="false" />
+        <label for="radio1">Only important emails please</label>
         <br />
         <button type="submit" className="btn btn-primary">Register</button>
         </form>
