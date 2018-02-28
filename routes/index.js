@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var ExpressValidator = require('express-validator');
+router.use(ExpressValidator());
 
 /* This is just here to check if the backend is running */
 router.get('/', function(req, res, next) {
