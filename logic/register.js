@@ -2,6 +2,7 @@ var User = require('../models/user');
 var bcrypt = require('bcrypt');
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
+var expressValidator = require('express-validator');
 
 module.exports = {
     register: function (req, res, next) {
@@ -13,21 +14,21 @@ module.exports = {
         var confirmPassword = req.body.confirmPassword;
 
 
-        //Check for IMage Field
-        if (req.files.length != 0) {
+        // //Check for IMage Field
+        // if (req.files.length != 0) {
 
-            console.log('uploading');
+        //     console.log('uploading');
 
-            var profileImageOriginalName = req.files[0].originalname;
-            var profileImageName = req.files[0].originalname
-            var profileImageMime = req.files[0].mimeType;
-            var profileImagePath = req.files[0].path;
-            var profileImageSize = req.files[0].size;
+        //     var profileImageOriginalName = req.files[0].originalname;
+        //     var profileImageName = req.files[0].originalname
+        //     var profileImageMime = req.files[0].mimeType;
+        //     var profileImagePath = req.files[0].path;
+        //     var profileImageSize = req.files[0].size;
 
-        } else {
-            //Set a Default Image
-            var profileImageName = 'noImage.png';
-        }
+        // } else {
+        //     //Set a Default Image
+        //     var profileImageName = 'noImage.png';
+        // }
 
         //form Validation using Express-Validator
         req.checkBody('name', 'Name Field is Required').notEmpty();
@@ -56,7 +57,6 @@ module.exports = {
                 email: email,
                 username: username,
                 password: password,
-                profile: profileImageName
             });
 
             //Create User
@@ -77,7 +77,7 @@ module.exports = {
                 });
 
                 //Success Message
-                req.flash('success', 'You are now registered and may log in');
+                //req.flash('success', 'You are now registered and may log in');
 
                 res.location('/');
                 res.redirect('/');
