@@ -11,7 +11,7 @@ class Register extends React.Component {
             username: '',
             password: '',
             confirmPassword: '',
-            mail: false // boolean not working trying a string
+            mail: false 
         }
     }
 
