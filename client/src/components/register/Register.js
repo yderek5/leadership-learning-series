@@ -11,7 +11,7 @@ class Register extends React.Component {
             username: '',
             password: '',
             confirmPassword: '',
-            mail: false 
+            mail: ''
         }
     }
 
@@ -27,7 +27,7 @@ class Register extends React.Component {
         const {name, email, username, password, confirmPassword, mail} = this.state;
         console.log(this.state);
 
-        axios.post('http://localhost:3001/users/register', 
+        axios.post('/users/register', 
         {name, email, username, password, confirmPassword, mail})
         .then(res => {
             res.json();
