@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon ./bin/www\" \"npm run client\""
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
