@@ -11,7 +11,7 @@ class Register extends React.Component {
             username: '',
             password: '',
             confirmPassword: '',
-            mail: false
+            mail: ''
         }
     }
 
@@ -57,10 +57,10 @@ class Register extends React.Component {
         <input onChange={this.onChange} id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword"
             className="form-control" />
         <div className="form-group"></div>
-        <input onChange={this.onChange} id="mail" type="radio" name="mail" value={true} />
+        <input onChange={this.onChange} id="mail" type="radio" name="mail" value="true" />
         <label for="radio1">Please Add me to your Mailing List</label>
         <br />
-        <input onChange={this.onChange} id="nomail" type="radio" name="mail" value={false} />
+        <input onChange={this.onChange} id="nomail" type="radio" name="mail" value="false" />
         <label for="radio1">Only important emails please</label>
         <br />
         <button type="submit" className="btn btn-primary">Register</button>
