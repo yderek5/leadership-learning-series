@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon ./bin/www\" \"npm run client\""
+    "start": "node ./bin/www",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "engines": {
+    "node": "9.5.0"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",

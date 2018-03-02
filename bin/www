@@ -21,10 +21,17 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+// This serves our React app
+app.get("*", (req, res) => {  
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+app.get("*", (req, res) => {  
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
