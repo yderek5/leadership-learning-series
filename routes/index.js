@@ -4,7 +4,7 @@ var ExpressValidator = require('express-validator');
 router.use(ExpressValidator());
 
 /* This Serves our React app */
-app.get("*", (req, res) => {  
+router.get("*", (req, res) => {  
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
   });
 
