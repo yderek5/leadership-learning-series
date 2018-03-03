@@ -9,13 +9,13 @@ class Header extends Component {
         return [
             <li key ="0" className='nav-item'> <Link className="nav-link" to='/signout'>Sign Out </Link></li>,
             <li key ="1" className='nav-item'> <Link className="nav-link" to='/feature'>Personal Watchlist </Link></li>,
-            <li key ="2" className='nav-item'> <Link className="nav-link" to='/About'>About </Link></li>
+            <li key ="2" className='nav-item'> <Link className="nav-link" to='/About'>About </Link></li>,
         ];
         } else {
             return [
                 <li key ="0" className='nav-item'><Link className='nav-link' to='/signin'> Sign in </Link></li>,
                 <li key ="1" className='nav-item'><Link className="nav-link" to="/signup"> Sign up</Link></li>,
-                <li key ="2" className='nav-item'> <Link className="nav-link" to='/About'>About </Link></li>
+                <li key ="2" className='nav-item'> <Link className="nav-link" to='/About'>About </Link></li>,
             ];
         }
     }
@@ -23,7 +23,7 @@ class Header extends Component {
     render() {
         return(
             <nav className="navbar navbar-light">
-                <Link to='/feature' className="navbar-brand"> Mern Authentication </Link>
+                <Link to='/' className="navbar-brand"> Mern Authentication </Link>
                 <ul className="nav navbar-nav">
                     {this.renderLinks()}
                 </ul>

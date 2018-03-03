@@ -9,6 +9,7 @@ import Signout from './auth/signout';
 import Signup from './auth/signup';
 import Feature from "./feature";
 import About from "./About";
+import Home from "./Home";
 import RequireAuth from './auth/require_auth';
 
 class HomePage extends Component {
@@ -19,8 +20,8 @@ class HomePage extends Component {
                 <Header />
 
                 <Switch>
-                
-                    <Route exact path="/" component={RequireAuth(Feature)} />
+
+                    <Route exact path="/" component={Home} />
                     <Route path="/customers" component = {Customers} />
                     <Route path="/signin" component={Signin} />
                     <Route path="/signup" component={Signup} />
