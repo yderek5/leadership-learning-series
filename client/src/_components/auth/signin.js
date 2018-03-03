@@ -35,7 +35,7 @@ class Signin extends Component {
 
         return (
             <Form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <h1>Sign into Altcoin Charter</h1>
+                <h1>Sign into Members Area</h1>
                 <div className="form-group">
                     <label>Email:</label>
                     <Field name="email"

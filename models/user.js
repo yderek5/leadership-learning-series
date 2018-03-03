@@ -13,9 +13,7 @@ const UserSchema = mongoose.Schema({
     password: {
         type: String,
         required: true
-    },
-    name: String,
-    mail: Boolean,
+    }
 });
 
 UserSchema.plugin(uniqueValidator);

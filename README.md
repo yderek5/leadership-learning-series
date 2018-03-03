@@ -29,7 +29,7 @@ npm run client
 
 ### Authors
 
-Seth Walton
+SethWalton
 
 ### Version
 
