@@ -3,6 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { signUpAction } from '../../_store/actions/auth';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import './auth.css';
 
 const renderInput=field=>{
     const {meta: {touched,error}}=field;
@@ -33,7 +34,7 @@ class Signup extends Component {
     render() {
         const { handleSubmit } = this.props;
         return (
-            <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+            <form className="marginTop" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <fieldset className="form-group">
                     <label>Email:</label>
                     <Field

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { signOutAction } from '../../_store/actions/auth';
 import { connect } from 'react-redux';
-
+import './auth.css';
 class Signout extends Component {
 
   componentWillMount(){
@@ -11,7 +11,7 @@ class Signout extends Component {
   render(){
     return(
       <div>
-      <h1>You have been logged out</h1>
+      <h1 className = "marginTop">You have been logged out</h1>
       </div>
     )
   }
