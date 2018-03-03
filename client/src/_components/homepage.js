@@ -35,9 +35,9 @@ class HomePage extends Component {
                     <Route path="/services/individual" component = {ServicesIndividual} />
                     <Route path="/services/consulting" component = {ServicesConsulting} />
                     <Route path="/services/training" component = {ServicesTraining} />
-                    <Route path="/resources/articles" component = {ResourcesArticles} />
-                    <Route path="/resources/prep" component = {ResourcesPrep} />
-                    <Route path="/resources/worksheets" component = {ResourcesWorksheets} />
+                    <Route path="/resources/articles" component = {RequireAuth(ResourcesArticles)} />
+                    <Route path="/resources/prep" component = {RequireAuth(ResourcesPrep)} />
+                    <Route path="/resources/worksheets" component = {RequireAuth(ResourcesWorksheets)} />
 
                     <Route path="/signin" component={Signin} />
                     <Route path="/signup" component={Signup} />

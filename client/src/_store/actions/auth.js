@@ -21,7 +21,7 @@ export function signInAction(history, { email, password }) {
                     // - Save the JWT token
                     localStorage.setItem('token', res.data.token);
                     // - redirect to the route '/feature'
-                    history.push('/feature');
+                    history.push('/resources/articles');
                 } else {
                     dispatch(authError(res.data.msg));
                 }
@@ -41,7 +41,7 @@ export function signUpAction(history, { email, password }) {
             .then( res => {
                 dispatch({ type: AUTH_USER });
                 localStorage.setItem('token', res.data.token);
-                history.push('/feature');
+                history.push('/resources/articles');
             })
             .catch( res => {
                 dispatch(authError('Email already registered.'));
