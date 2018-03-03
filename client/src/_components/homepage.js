@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Customers from './Customer/customers';
+
 import Header from './universal/header';
 import Navbar from './Navbar';
 
@@ -31,7 +31,6 @@ class HomePage extends Component {
                 <Switch>
 
                     <Route exact path="/" component={Home} />
-                    <Route path="/customers" component = {Customers} />
                     <Route path="/services/individual" component = {ServicesIndividual} />
                     <Route path="/services/consulting" component = {ServicesConsulting} />
                     <Route path="/services/training" component = {ServicesTraining} />

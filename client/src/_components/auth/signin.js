@@ -3,6 +3,7 @@ import { Field, reduxForm, Form } from 'redux-form';
 import { signInAction } from '../../_store/actions/auth';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import './auth.css';
 
 const renderInput = field => {
     const { input, type } = field;
@@ -34,7 +35,7 @@ class Signin extends Component {
         const { handleSubmit } = this.props;
 
         return (
-            <Form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+            <Form className="marginTop"onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <h1>Sign into Members Area</h1>
                 <div className="form-group">
                     <label>Email:</label>
