@@ -16,7 +16,10 @@ import RequireAuth from './auth/require_auth';
 import ServicesIndividual from "./ServicesIndividual";
 import ServicesConsulting from "./ServicesConsulting";
 import ServicesTraining from "./ServicesTraining";
-
+import ResourcesArticles from "./ResourcesArticles";
+import ResourcesPrep from "./ResourcesPrep";
+import ResourcesWorksheets from "./ResourcesWorksheets";
+import Contact from "./ContactUs";
 
 class HomePage extends Component {
 
@@ -31,11 +34,16 @@ class HomePage extends Component {
                     <Route path="/customers" component = {Customers} />
                     <Route path="/services/individual" component = {ServicesIndividual} />
                     <Route path="/services/consulting" component = {ServicesConsulting} />
-                    <Route path="/services/Training" component = {ServicesTraining} />
+                    <Route path="/services/training" component = {ServicesTraining} />
+                    <Route path="/resources/articles" component = {ResourcesArticles} />
+                    <Route path="/resources/prep" component = {ResourcesPrep} />
+                    <Route path="/resources/worksheets" component = {ResourcesWorksheets} />
+
                     <Route path="/signin" component={Signin} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/signout" component={Signout} />
                     <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
                     <Route path="/feature" component={RequireAuth(Feature)} />
                 </Switch>
 
