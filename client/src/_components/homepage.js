@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Customers from './Customer/customers';
 import Header from './universal/header';
+import Navbar from './Navbar';
+
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -11,6 +13,10 @@ import Feature from "./feature";
 import About from "./About";
 import Home from "./Home";
 import RequireAuth from './auth/require_auth';
+import ServicesIndividual from "./ServicesIndividual";
+import ServicesConsulting from "./ServicesConsulting";
+import ServicesTraining from "./ServicesTraining";
+
 
 class HomePage extends Component {
 
@@ -23,6 +29,9 @@ class HomePage extends Component {
 
                     <Route exact path="/" component={Home} />
                     <Route path="/customers" component = {Customers} />
+                    <Route path="/services/individual" component = {ServicesIndividual} />
+                    <Route path="/services/consulting" component = {ServicesConsulting} />
+                    <Route path="/services/Training" component = {ServicesTraining} />
                     <Route path="/signin" component={Signin} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/signout" component={Signout} />

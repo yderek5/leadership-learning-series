@@ -1,0 +1,13 @@
+.header-blue {
+    background-color: #3C698D;
+  }
+
+  h1 {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    margin: 0px, auto;
+  }

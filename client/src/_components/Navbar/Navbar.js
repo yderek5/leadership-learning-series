@@ -1,14 +1,9 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import './navbar.css';
 import logo from './logo.png';
-
-class Header extends Component {
-
-    renderLinks() {
-        if(this.props.authenticated) {
-        return [
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+const Navbar = (props) => {
+    return(
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -69,33 +64,7 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
-
-        ];
-        } else {
-            return [
-                <li key ="0" className='nav-item'><Link className='nav-link' to='/signin'> Sign in </Link></li>,
-                <li key ="1" className='nav-item'><Link className="nav-link" to="/signup"> Sign up</Link></li>,
-                <li key ="2" className='nav-item'> <Link className="nav-link" to='/About'>About </Link></li>,
-            ];
-        }
-    }
-
-    render() {
-        return(
-            <nav className="navbar navbar-light">
-                <Link to='/' className="navbar-brand"> Mern Authentication </Link>
-                <ul className="nav navbar-nav">
-                    {this.renderLinks()}
-                </ul>
-            </nav>
-        );
-    }
+    );
 }
 
-function mapStateToProps(state){
-  return {
-    authenticated: state.auth.authenticated
-  }
-}
-
-export default connect(mapStateToProps)(Header);
+export default Navbar;

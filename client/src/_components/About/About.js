@@ -4,6 +4,7 @@ import lisa from './lisa.png'
 const About = (props) => {
     return(
 <div class="text-center marginTop">
+<h1> </h1>
     <div class="container">
         <div class="row">
             <div class="col-md-3 text-right">
