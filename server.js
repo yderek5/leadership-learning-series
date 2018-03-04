@@ -58,7 +58,9 @@ require('./config/passport')(passport);  // authentication strategy
 app.use('/users',users);
 app.use('/', index);
 
-app.get(express.static(path.join(__dirname, 'client', 'build')));
+app.get("*", (req, res) => {  
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 // Start Server
 app.listen(process.env.PORT || port, () => `Server running on port ${port}`);
