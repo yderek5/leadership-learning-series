@@ -98,7 +98,7 @@ class HomePage extends Component {
                     <Title>
                     Contact
                     </Title>
-                    <Signin />
+                    <Contact />
                     </div>
                     </Route>
 
