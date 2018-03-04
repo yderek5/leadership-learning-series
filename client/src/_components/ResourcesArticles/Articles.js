@@ -1,9 +1,13 @@
 import React from 'react';
 import './articles.css';
+import Title from "./../TitleBanner";
 
 const Articles = (props) => {
     return(
         <div className="container">
+        <Title>
+        Articles & Videos
+        </Title>
     <h4>Enjoy doing your own research? Here are articles and resources ATCS finds helpful.</h4>
     <div className="row marginTop">
         <div className="col-md-6">

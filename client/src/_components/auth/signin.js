@@ -35,7 +35,7 @@ class Signin extends Component {
         const { handleSubmit } = this.props;
 
         return (
-            <Form className="marginTop"onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+            <Form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <h1>Sign into Members Area</h1>
                 <div className="form-group">
                     <label>Email:</label>

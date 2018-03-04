@@ -3,7 +3,7 @@ import './individual.css';
 
 const Individual = (props) => {
     return(
-        <h2 class ="marginTop">Individual coming soon!</h2>
+        <h2>Individual Packages coming soon!</h2>
     );
 }
 

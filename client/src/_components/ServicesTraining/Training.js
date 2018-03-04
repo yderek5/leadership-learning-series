@@ -3,7 +3,7 @@ import './training.css';
 
 const Training = (props) => {
     return(
-        <h2 class="marginTop">Training coming soon!</h2>
+        <h2>Training coming soon!</h2>
         
     );
 }

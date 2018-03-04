@@ -3,7 +3,7 @@ import './consulting.css';
 
 const Consulting = (props) => {
     return(
-        <h2 class ="marginTop">Consulting coming soon!</h2>
+        <h2>Consulting coming soon!</h2>
     );
 }
 

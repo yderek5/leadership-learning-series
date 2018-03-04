@@ -3,7 +3,7 @@ import './about.css';
 import lisa from './lisa.png'
 const About = (props) => {
     return(
-<div class="text-center marginTop">
+<div class="text-center">
 <h1> </h1>
     <div class="container">
         <div class="row">
