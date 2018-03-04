@@ -1,4 +1,40 @@
-# This is a website for the company All Things Career Services.
+# MERN app boilerplate with user authentication
 
-This will be a platform for our client to upload/sell her career services 
-and for users to complete a checklist or to do list to help advance them towards their career goals.
+> Built with React + Redux front end and Nodejs, express, mongodb backend
+
+> Still needs to be improved
+
+## Quick Start
+
+``` bash
+# Install dependencies for server
+npm install
+
+# Install dependencies for client
+npm run client-install
+
+# Run the client & server with concurrently
+npm run dev
+
+# Run the Express server only
+npm run server
+
+# Run the React client only
+npm run client
+
+# Server runs on http://localhost:5000 and client on http://localhost:3000
+```
+
+## App Info
+
+### Authors
+
+SethWalton
+
+### Version
+
+1.0.0
+
+### License
+
+This project is licensed under the MIT License
