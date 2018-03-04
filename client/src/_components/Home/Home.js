@@ -3,7 +3,7 @@ import './home.css';
 
 const Home = (props) => {
     return(
-        <div className="container marginTop">
+        <div className="container">
         <p>
             All Things Career Services (ATCS) offers coaching, training, and consulting solutions 
             tailored to meet the unique challenges impacting each stage along the employee lifecycle.

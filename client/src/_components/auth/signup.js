@@ -34,7 +34,7 @@ class Signup extends Component {
     render() {
         const { handleSubmit } = this.props;
         return (
-            <form className="marginTop" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+            <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <fieldset className="form-group">
                     <label>Email:</label>
                     <Field

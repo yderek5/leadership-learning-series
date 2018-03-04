@@ -1,9 +1,17 @@
 import React from 'react';
 import './prep.css';
+import Title from "./../TitleBanner";
 
 const Prep = (props) => {
     return(
-        <h2 className="marginTop">Prep coming soon!</h2>
+<div>
+	<Title>
+    Prep
+    </Title>
+	<h2>Prep coming soon!</h2>
+
+</div>
+        
     );
 }
 

@@ -20,6 +20,7 @@ import ResourcesArticles from "./ResourcesArticles";
 import ResourcesPrep from "./ResourcesPrep";
 import ResourcesWorksheets from "./ResourcesWorksheets";
 import Contact from "./ContactUs";
+import Title from "./TitleBanner";
 
 class HomePage extends Component {
 
@@ -29,21 +30,92 @@ class HomePage extends Component {
                 <Header />
 
                 <Switch>
+                    <Route exact path='/'>
+                    <div className="wrapper">
+                    <Title>
+                    All Things Career Services
+                    </Title>
+                    <Home />
+                    </div>
+                    </Route>
 
-                    <Route exact path="/" component={Home} />
-                    <Route path="/services/individual" component = {ServicesIndividual} />
-                    <Route path="/services/consulting" component = {ServicesConsulting} />
-                    <Route path="/services/training" component = {ServicesTraining} />
+                    <Route exact path='/about'>
+                    <div className="wrapper">
+                    <Title>
+                    About
+                    </Title>
+                    <About />
+                    </div>
+                    </Route>
+
+                    <Route path="/services/individual">
+                    <div className="wrapper">
+                    <Title>
+                    Individual Training
+                    </Title>
+                    <ServicesIndividual />
+                    </div>
+                    </Route>
+
+                    <Route path="/services/consulting">
+                    <div className="wrapper">
+                    <Title>
+                    Consulting
+                    </Title>
+                    <ServicesConsulting />
+                    </div>
+                    </Route>
+
+                    <Route path="/services/training">
+                    <div className="wrapper">
+                    <Title>
+                    Training
+                    </Title>
+                    <ServicesTraining />
+                    </div>
+                    </Route>
+
+                    <Route path="/signin">
+                    <div className="wrapper">
+                    <Title>
+                    Log In
+                    </Title>
+                    <Signin />
+                    </div>
+                    </Route>
+
+                    <Route path="/signup">
+                    <div className="wrapper">
+                    <Title>
+                    Register
+                    </Title>
+                    <Signup />
+                    </div>
+                    </Route>
+
+                    <Route path="/contact">
+                    <div className="wrapper">
+                    <Title>
+                    Contact
+                    </Title>
+                    <Signin />
+                    </div>
+                    </Route>
+
+                    <Route path="/signout">
+                    <div className="wrapper">
+                    <Title>
+                    Your Logged Off Thank You!
+                    </Title>
+                    <Signout />
+                    </div>
+                    </Route>
+
                     <Route path="/resources/articles" component = {RequireAuth(ResourcesArticles)} />
                     <Route path="/resources/prep" component = {RequireAuth(ResourcesPrep)} />
                     <Route path="/resources/worksheets" component = {RequireAuth(ResourcesWorksheets)} />
 
-                    <Route path="/signin" component={Signin} />
-                    <Route path="/signup" component={Signup} />
-                    <Route path="/signout" component={Signout} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/feature" component={RequireAuth(Feature)} />
+                    
                 </Switch>
 
             </div>
