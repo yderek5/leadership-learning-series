@@ -34,7 +34,7 @@ const Home = (props) => {
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
-                                Our leadership learning series provides webinars and in person classNamees featuring a
+                                Our leadership learning series provides webinars and in person classes featuring a
                                 collection of leadership topics. Courses can be customized to meet specific needs within
                                 an organization and include material from the most relevant and up-to-date research available.
                             </p>
