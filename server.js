@@ -6,6 +6,7 @@ const config = require('./config/database');
 const bodyParser = require('body-parser');
 const cors = require('cors');  //access the server from any domain name
 const passport =  require('passport');
+require('dotenv').config();
 
 // Connect to Database
 mongoose.connect(config.database);
@@ -24,6 +25,7 @@ mongoose.connection.on('error', (err) => {
 const app = express();
 
 const users = require('./routes/users');
+const index = require('./routes/index');
 
 // handle get requests to '/api/customers'
 app.get('/api/customers', (req, res) => {
@@ -43,7 +45,7 @@ const port = 5000;
 app.use(cors());
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // Body Parser Middleware
 app.use(bodyParser.json());
@@ -54,11 +56,9 @@ app.use(passport.session());
 require('./config/passport')(passport);  // authentication strategy
 
 app.use('/users',users);
+app.use('/', index);
 
-// Index Route
-app.get('/', (req, res) => {
-  res.send('Invalid Endpoint');
-});
+app.get(express.static(path.join(__dirname, 'client', 'build')));
 
 // Start Server
-app.listen(port, () => `Server running on port ${port}`);
+app.listen(process.env.PORT || port, () => `Server running on port ${port}`);
