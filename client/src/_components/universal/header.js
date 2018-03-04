@@ -60,7 +60,7 @@ class Header extends Component {
                   Account
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/signup">Register</a>
+                  <a className="dropdown-item" href="/purchases">Purchases</a>
                   <div className="dropdown-divider"></div>
                   <a className="dropdown-item" href="/signout">Logout</a>
                 </div>
