@@ -21,6 +21,8 @@ import ResourcesPrep from "./ResourcesPrep";
 import ResourcesWorksheets from "./ResourcesWorksheets";
 import Contact from "./ContactUs";
 import Title from "./TitleBanner";
+import Footer from './Footer';
+import Purchases from './Purchases';
 
 class HomePage extends Component {
 
@@ -105,9 +107,18 @@ class HomePage extends Component {
                     <Route path="/signout">
                     <div className="wrapper">
                     <Title>
-                    Your Logged Off Thank You!
+                    You have been logged out.
                     </Title>
                     <Signout />
+                    </div>
+                    </Route>
+
+                    <Route path='/purchases'>
+                    <div className="wrapper">
+                    <Title>
+                    Purchases
+                    </Title>
+                    <Purchases />
                     </div>
                     </Route>
 
@@ -117,7 +128,7 @@ class HomePage extends Component {
 
                     
                 </Switch>
-
+            <Footer />
             </div>
         );
     }
