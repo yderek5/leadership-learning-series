@@ -34,18 +34,12 @@ class Contact extends React.Component {
         return(
             <div>
                 <div className="text-center container">
-                <h5>Connecting with you is important to us! We promise to respond within 24 hours
-                <br /> during the work week and by the end of business Monday or post-holiday Tuesday.</h5>
-
-                <h5>Email:
-                    <a href="">info@leadershiplearningseries.com</a>
-                </h5>
+                <div className="calendly-inline-widget calendly" data-url="https://calendly.com/allthingscareerconsulting/30min"></div>
+               
+                <br /> <h5>Not enough time to chat?</h5>
+                       <h5>Shoot us an Email!</h5>
             </div>
             <div className="container text-center" id="formArea">
-                <h5>Get added to our monthly newsletter featuring new services and resources.</h5>
-                <br />
-
-
                 <form id="contact-form" onSubmit={this.onSubmit} >
                     <div className="form-group">
                         <input onChange={this.onChange} type="text" className="form-control" name="name" placeholder="What's Your Name?" />
