@@ -1,4 +1,4 @@
 module.exports = {
     database: process.env.MONGODB,
-    secret:'mysecret'
+    secret: process.env.SECRET
 }
