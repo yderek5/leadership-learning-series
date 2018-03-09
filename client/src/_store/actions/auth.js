@@ -19,7 +19,8 @@ export function signInAction(history, { email, password }) {
                     // - Update state to indicate user is authenticated
                     dispatch({ type: AUTH_USER });
                     // - Save the JWT token
-                    localStorage.setItem('token', res.data.token);
+                    sessionStorage.setItem('token', res.data.token);
+                    sessionStorage.setItem('email', email);
                     // - redirect to the route '/feature'
                     history.push('/resources/articles');
                 } else {
@@ -39,9 +40,14 @@ export function signUpAction(history, { email, password }) {
     return async (dispatch) => {
         axios.post('/users/register', { email,password })
             .then( res => {
+                if(res.data.success){
                 dispatch({ type: AUTH_USER });
-                localStorage.setItem('token', res.data.token);
+                sessionStorage.setItem('token', res.data.token);
+                sessionStorage.setItem('email', email);
                 history.push('/resources/articles');
+                } else {
+                    dispatch(authError(res.data.msg));
+                }
             })
             .catch( res => {
                 dispatch(authError('Email already registered.'));
@@ -57,7 +63,8 @@ export function authError(error) {
 }
 
 export function signOutAction() {
-    localStorage.removeItem('token');
+    sessionStorage.removeItem('token');
+    sessionStorage.removeItem('email');
     return { type: UNAUTH_USER };
 }
 
