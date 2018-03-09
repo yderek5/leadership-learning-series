@@ -8,7 +8,7 @@ import Homepage from './_components/homepage';
 
 //   -----  code that checks local storage for a 'user' token. In the case that there is, dispatch an action of type authenticated into reducers
 import { AUTH_USER } from './_store/actions/constants';
-const token = localStorage.getItem('token');
+const token = sessionStorage.getItem('token');
 if(token) {
   store.dispatch({ type: AUTH_USER });
 } //  ----- end 
