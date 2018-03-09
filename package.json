@@ -1,7 +1,7 @@
 {
-  "name": "altcoin-charter",
+  "name": "All Things Career Services",
   "version": "1.0.0",
-  "description": "Charts the histories of user saved cryptocurrencies",
+  "description": "Lisa Parrott Career Services",
   "main": "server.js",
   "scripts": {
     "client-install": "cd client && npm install",

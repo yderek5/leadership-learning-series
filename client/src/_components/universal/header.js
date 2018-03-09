@@ -25,6 +25,9 @@ class Header extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/news">News Letter</a>
+              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">
@@ -89,18 +92,8 @@ class Header extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Services
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/services/individual">Individual</a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="/services/training">Training</a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="/services/consulting">Consulting</a>
-                </div>
+              <li className="nav-item">
+                <a className="nav-link" href="/news">News Letter</a>
               </li>
               
               <li className="nav-item">

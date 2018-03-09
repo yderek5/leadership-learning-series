@@ -11,6 +11,7 @@ import Signout from './auth/signout';
 import Signup from './auth/signup';
 import Feature from "./feature";
 import About from "./About";
+import News from "./NewsLetter";
 import Home from "./Home";
 import RequireAuth from './auth/require_auth';
 import ServicesIndividual from "./ServicesIndividual";
@@ -50,30 +51,12 @@ class HomePage extends Component {
                     </div>
                     </Route>
 
-                    <Route path="/services/individual">
+                    <Route exact path='/news'>
                     <div className="wrapper">
                     <Title>
-                    Individual Training
+                    News Letter
                     </Title>
-                    <ServicesIndividual />
-                    </div>
-                    </Route>
-
-                    <Route path="/services/consulting">
-                    <div className="wrapper">
-                    <Title>
-                    Consulting
-                    </Title>
-                    <ServicesConsulting />
-                    </div>
-                    </Route>
-
-                    <Route path="/services/training">
-                    <div className="wrapper">
-                    <Title>
-                    Training
-                    </Title>
-                    <ServicesTraining />
+                    <News />
                     </div>
                     </Route>
 
@@ -121,6 +104,9 @@ class HomePage extends Component {
                     <Purchases />
                     </div>
                     </Route>
+                    <Route path="/services/individual" component = {RequireAuth(ServicesIndividual)} />
+                    <Route path="/services/consulting" component = {RequireAuth(ServicesConsulting)} />
+                    <Route path="/services/training" component = {RequireAuth(ServicesTraining)} />
 
                     <Route path="/resources/articles" component = {RequireAuth(ResourcesArticles)} />
                     <Route path="/resources/prep" component = {RequireAuth(ResourcesPrep)} />
