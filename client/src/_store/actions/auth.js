@@ -69,7 +69,7 @@ export function signOutAction() {
 export function fetchMessage(){
     return function(dispatch){
         axios.get('/',{
-            headers: { authorization: localStorage.getItem('token') }
+            headers: { authorization: sessionStorage.getItem('token') }
         })
         .then((response) => {
             dispatch({
