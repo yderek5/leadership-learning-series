@@ -11,7 +11,7 @@ const News = props => {
 				lots more will be mailed once a month to keep everyone
 				connected.
 			</p>
-			<a className="btn btn-primary" href="http://eepurl.com/dnm74f">Click Here To Sign up for The Nesletter</a>
+			<a className="btn btn-primary" href="http://eepurl.com/dnouRv">Click Here To Sign up for The Nesletter</a>
 		</div>
 	);
 };
