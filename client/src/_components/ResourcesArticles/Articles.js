@@ -16,7 +16,7 @@ const Articles = (props) => {
                     <strong className="cardHeaderText">Books to Help You Get Started</strong>
                 </div>
                 <ul className="list-group list-group-flush text-center">
-                    <li claassName="list-group-item">
+                    <li className="list-group-item">
                         <p>Lisa's E-book</p>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                             <input type="hidden" name="cmd" value="_s-xclick" />
