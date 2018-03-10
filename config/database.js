@@ -1,4 +1,4 @@
 module.exports = {
-    database: process.env.MONGODB,
-    secret: process.env.SECRET
+    database: 'mongodb://admin:admin@ds153609.mlab.com:53609/leadershiplearningseries',
+    secret: 'mysecret'
 }

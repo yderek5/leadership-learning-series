@@ -16,6 +16,16 @@ const Articles = (props) => {
                     <strong className="cardHeaderText">Books to Help You Get Started</strong>
                 </div>
                 <ul className="list-group list-group-flush text-center">
+                    <li claassName="list-group-item">
+                        <p>Lisa's E-book</p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="78RRLERE2JEGQ" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+
+                    </li>
                     <li className="list-group-item">
                         <a target="_blank" href="https://www.amazon.com/What-Color-Your-Parachute-2018/dp/039957963X/ref=sr_1_3?ie=UTF8&qid=1518225592&sr=8-3&keywords=what+color+is+your+parachute+2018">
                             <p>What Color is Your Parachute?</p>
