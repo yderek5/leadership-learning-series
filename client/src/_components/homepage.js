@@ -24,15 +24,20 @@ import Contact from "./ContactUs";
 import Title from "./TitleBanner";
 import Footer from './Footer';
 import Purchases from './Purchases';
+import Admin from './Admin';
+
 
 class HomePage extends Component {
+
 
     render() {
         return(
             <div >
+
                 <Header />
 
                 <Switch>
+
                     <Route exact path='/'>
                     <div className="wrapper">
                     <Title>
@@ -111,7 +116,6 @@ class HomePage extends Component {
                     <Route path="/resources/articles" component = {RequireAuth(ResourcesArticles)} />
                     <Route path="/resources/prep" component = {RequireAuth(ResourcesPrep)} />
                     <Route path="/resources/worksheets" component = {RequireAuth(ResourcesWorksheets)} />
-
                     
                 </Switch>
             <Footer />
