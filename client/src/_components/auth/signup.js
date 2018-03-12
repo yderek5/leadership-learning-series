@@ -35,14 +35,7 @@ class Signup extends Component {
         const { handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <fieldset className="form-group">
-                    <label>Name:</label>
-                    <Field
-                    name="name"
-                    component={renderInput}
-                    type="name"
-                    />
-                </fieldset>
+               
 
                 <fieldset className="form-group">
                     <label>Email:</label>
@@ -50,6 +43,15 @@ class Signup extends Component {
                     name="email"
                     component={renderInput}
                     type="email"
+                    />
+                </fieldset>
+
+                 <fieldset className="form-group">
+                    <label>Name:</label>
+                    <Field
+                    name="name"
+                    component={renderInput}
+                    type="text"
                     />
                 </fieldset>
                 <fieldset className="form-group">
