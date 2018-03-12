@@ -35,10 +35,10 @@ export function signInAction(history, { email, password }) {
     };
 }
 
-export function signUpAction(history, { email, password }) {
+export function signUpAction(history, { name, email, password }) {
     //same process as signInAction
     return async (dispatch) => {
-        axios.post('/users/register', { email,password })
+        axios.post('/users/register', { name, email, password })
             .then( res => {
                 dispatch({ type: AUTH_USER });
                 sessionStorage.setItem('token', res.data.token);

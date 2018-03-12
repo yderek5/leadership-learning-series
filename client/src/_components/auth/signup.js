@@ -36,6 +36,15 @@ class Signup extends Component {
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <fieldset className="form-group">
+                    <label>Name:</label>
+                    <Field
+                    name="name"
+                    component={renderInput}
+                    type="test"
+                    />
+                </fieldset>
+
+                <fieldset className="form-group">
                     <label>Email:</label>
                     <Field
                     name="email"
