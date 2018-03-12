@@ -40,7 +40,7 @@ class Signup extends Component {
                     <Field
                     name="name"
                     component={renderInput}
-                    type="test"
+                    type="name"
                     />
                 </fieldset>
 
@@ -78,6 +78,10 @@ class Signup extends Component {
 function validate(formProps) {
     const errors = {};
   
+    if (!formProps.name) {
+      errors.name = 'Please enter your name';
+    }
+
     if (!formProps.email) {
       errors.email = 'Please enter an email';
     }
