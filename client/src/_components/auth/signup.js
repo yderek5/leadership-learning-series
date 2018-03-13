@@ -40,17 +40,8 @@ class Signup extends Component {
         const { handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-               <fieldset className="form-group">
-                    <Field
-                    name="name"
-                    label="Name:"
-                    component={renderInput}
-                    type="text"
-                    />
-                </fieldset>
-
-                <fieldset className="form-group">
-                    
+                <fieldset className="form-group container">
+                    <label>Email:</label>
                     <Field
                     name="email"
                     label="Email:"
@@ -58,9 +49,8 @@ class Signup extends Component {
                     type="email"
                     />
                 </fieldset>
-  
-                <fieldset className="form-group">
-                 
+                <fieldset className="form-group container">
+                    <label>Password:</label>
                     <Field
                     name="password"
                     label="Password:"
@@ -68,8 +58,8 @@ class Signup extends Component {
                     type="password"
                     />
                 </fieldset>
-                <fieldset className="form-group">
-                    
+                <fieldset className="form-group container">
+                    <label>Confirm Password:</label>
                     <Field
                     name="passwordConfirm"
                     label="Confirm Password:"
@@ -78,7 +68,11 @@ class Signup extends Component {
                     />
                 </fieldset>
                 {this.renderAlert()}
+                <div className="row">
+                  <div className="col s12 center-align">
                 <button action="submit" className="btn btn-primary">Sign Up</button>
+                  </div>
+                </div>
             </form>
         );
     }
