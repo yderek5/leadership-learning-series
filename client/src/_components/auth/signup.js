@@ -40,6 +40,15 @@ class Signup extends Component {
         const { handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+             <fieldset className="form-group container">
+                    <Field
+                    name="name"
+                    label="Name:"
+                    component={renderInput}
+                    type="text"
+                    />
+                </fieldset>
+
                 <fieldset className="form-group container">
                     <Field
                     name="email"
