@@ -3,5 +3,9 @@
 	max-width: 60px;
 }
 .navbar{
-	background-color: #3C698D;
+	background-color: white;
+}
+#navbarSupportedContent{
+	background-color: #babbbd;
+	max-height: 80%;
 }

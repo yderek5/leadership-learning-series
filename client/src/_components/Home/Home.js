@@ -44,7 +44,7 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
                 <div className="card">
-                    <div className="card-header text-center"><a href="/services/consultant"><strong className="cardHeaderText">Consulting Solutions</strong></a></div>
+                    <div className="card-header text-center"><a href="/services/consulting"><strong className="cardHeaderText">Consulting Solutions</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
