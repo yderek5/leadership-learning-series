@@ -7,9 +7,14 @@ import './auth.css';
 
 const renderInput=field=>{
     const {meta: {touched,error}}=field;
+    const { input, type, label } = field;
     return(
-        <div>
-            <input {...field.input} type={field.type} className="form-control" />
+        <div className="input-field">
+            
+            <input {...input} type={type} className="form-control" />
+            <label for= {type} class ="active">{label}</label>
+
+            
             <div className="error">{touched?error:''}</div>
         </div>
     );
@@ -39,6 +44,7 @@ class Signup extends Component {
                     <label>Email:</label>
                     <Field
                     name="email"
+                    label="Email:"
                     component={renderInput}
                     type="email"
                     />
@@ -47,6 +53,7 @@ class Signup extends Component {
                     <label>Password:</label>
                     <Field
                     name="password"
+                    label="Password:"
                     component={renderInput}
                     type="password"
                     />
@@ -55,6 +62,7 @@ class Signup extends Component {
                     <label>Confirm Password:</label>
                     <Field
                     name="passwordConfirm"
+                    label="Confirm Password:"
                     component={renderInput}
                     type="password"
                     />
@@ -73,6 +81,10 @@ class Signup extends Component {
 function validate(formProps) {
     const errors = {};
   
+    if (!formProps.name) {
+      errors.name = 'Please enter your name';
+    }
+
     if (!formProps.email) {
       errors.email = 'Please enter an email';
     }

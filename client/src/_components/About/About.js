@@ -43,8 +43,8 @@ const About = (props) => {
                     in employee advancement and satisfaction.
                     <br />
                     <br /> In her spare time Dr. Lisa is an advisory board member for
-                    <a href="https://www.skillmil.com">SkillMil</a> and
-                    <a href="https://www.evolve3x.com">Evolve</a>, two companies leveraging technology to explore the leading edge of their respective field
+                    <a href="https://www.skillmil.com"> SkillMil</a> and
+                    <a href="https://www.evolve3x.com"> Evolve</a>, two companies leveraging technology to explore the leading edge of their respective field
                     within Human Resources.
                     <br /> College isn’t for everyone, but Dr. Lisa loves learning new things:
                 </p>

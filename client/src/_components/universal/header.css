@@ -1,0 +1,11 @@
+.logo{
+	max-height: 60px;
+	max-width: 60px;
+}
+.navbar{
+	background-color: white;
+}
+#navbarSupportedContent{
+	background-color: #babbbd;
+	max-height: 80%;
+}
