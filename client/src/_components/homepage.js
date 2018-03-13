@@ -116,6 +116,8 @@ class HomePage extends Component {
                     <Route path="/resources/articles" component = {RequireAuth(ResourcesArticles)} />
                     <Route path="/resources/prep" component = {RequireAuth(ResourcesPrep)} />
                     <Route path="/resources/worksheets" component = {RequireAuth(ResourcesWorksheets)} />
+
+                    <Route path="/admin" component = {RequireAuth(Admin)} />                    
                     
                 </Switch>
             <Footer />

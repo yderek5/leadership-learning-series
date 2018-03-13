@@ -41,7 +41,7 @@ class Register extends React.Component {
         <h1> Register</h1>
         <p> Please Register using the form below</p>
         <div className="form-group"></div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Name Change:</label>
         <input onChange={this.onChange} id="name" type="text" placeholder="Enter Name" name="name" className="form-control" />
         <div className="form-group"></div>
         <label htmlFor="email">Email:</label>
