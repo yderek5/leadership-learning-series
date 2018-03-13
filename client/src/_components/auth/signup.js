@@ -7,9 +7,14 @@ import './auth.css';
 
 const renderInput=field=>{
     const {meta: {touched,error}}=field;
+    const { input, type, label } = field;
     return(
-        <div>
-            <input {...field.input} type={field.type} className="form-control" />
+        <div className="input-field">
+            
+            <input {...input} type={type} className="form-control" />
+            <label for= {type} class ="active">{label}</label>
+
+            
             <div className="error">{touched?error:''}</div>
         </div>
     );
@@ -36,35 +41,38 @@ class Signup extends Component {
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                <fieldset className="form-group">
-                    <label>Name:</label>
                     <Field
                     name="name"
+                    label="Name:"
                     component={renderInput}
                     type="text"
                     />
                 </fieldset>
 
                 <fieldset className="form-group">
-                    <label>Email:</label>
+                    
                     <Field
                     name="email"
+                    label="Email:"
                     component={renderInput}
                     type="email"
                     />
                 </fieldset>
   
                 <fieldset className="form-group">
-                    <label>Password:</label>
+                 
                     <Field
                     name="password"
+                    label="Password:"
                     component={renderInput}
                     type="password"
                     />
                 </fieldset>
                 <fieldset className="form-group">
-                    <label>Confirm Password:</label>
+                    
                     <Field
                     name="passwordConfirm"
+                    label="Confirm Password:"
                     component={renderInput}
                     type="password"
                     />

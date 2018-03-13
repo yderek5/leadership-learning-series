@@ -8,8 +8,9 @@ import './auth.css';
 const renderInput = field => {
     const { input, type } = field;
     return (
-        <div>
+        <div className="input-field">
             <input {...input} type={type} className="form-control" />
+            <label for= {type} class ="active">{type}</label>
         </div>
     );
 }
@@ -36,13 +37,13 @@ class Signin extends Component {
 
         return (
             <Form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <div className="form-group">
-                    <label>Email:</label>
-                    <Field name="email"
+                <div className="input-field">
+                    
+                    <Field id ="email" name="email"
                         type="email" component={renderInput} />
+                       
                 </div>
-                <div className="form-group">
-                    <label>Password:</label>
+                <div className="input-field">
                     <Field name="password"
                         type="password" component={renderInput} />
                 </div>
