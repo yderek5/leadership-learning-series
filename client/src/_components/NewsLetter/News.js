@@ -6,7 +6,7 @@ const News = props => {
 		<div className="container">
 			<p>
 				If you would like to be a part of our Network please sign up for
-				our News Letter. Helpful Resume tips, possible job leads, and
+				our Newsletter. Helpful Resume tips, possible job leads, and
 				lots more will be mailed once a month to keep everyone
 				connected.
 			</p>

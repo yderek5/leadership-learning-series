@@ -1,14 +1,37 @@
-.cardHeaderText {
+  .cardHeaderText {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 25px;
     font-weight: 50;
     color: white;
-  }
+    }
   
   .card-header {
     background-color: #3C698D;
   }
-  
+
   .marginTop {
     margin-top: 2.5%;
+  }
+  .topInfo {
+    background-image: url('./header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+h5 {
+  color:white
+}
+  .topTitle {
+    color:rgb(255, 255, 255);
+    margin-bottom: 0px;
+  }
+
+  .container {
+    margin-bottom: 0px;
+  }
+
+  .opacityColor {
+    background-color: rgba(37, 37, 37, 0.8);
+  }
+  bgColor {
+    background-color: rgba(93, 93, 93, 1);
   }

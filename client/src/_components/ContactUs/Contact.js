@@ -33,7 +33,7 @@ class Contact extends React.Component {
     render() {
         return(
             <div>
-                <div className="text-center container">
+                <div className="text-center">
                 <div className="calendly-inline-widget calendly" data-url="https://calendly.com/allthingscareerconsulting/30min"></div>
                
                 <br /> <h5>Not enough time to chat?</h5>
