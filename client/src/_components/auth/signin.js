@@ -10,7 +10,7 @@ const renderInput = field => {
     return (
         <div className="input-field">
             <input {...input} type={type} className="form-control" />
-            <label for= {type} class ="active">{type}</label>
+            <label htmlFor= {type} className="active">{type}</label>
         </div>
     );
 }
