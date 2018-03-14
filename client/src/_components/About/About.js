@@ -3,14 +3,14 @@ import './about.css';
 import lisa from './lisa.png'
 const About = (props) => {
     return(
-<div class="text-center">
+<div className="text-center">
 <h1> </h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 text-right">
-                <img class="round-pic" src={lisa} alt="Lisa Parrot" />
+    <div className="container">
+        <div className="row">
+            <div className="col-md-3 text-right">
+                <img className="round-pic" src={lisa} alt="Lisa Parrot" />
             </div>
-            <div class="col-md-8 text-left">
+            <div className="col-md-8 text-left">
                 <p>
                     Dr. Lisa Parrott is the founder of All Things Career Services, a consulting firm that helps employers and potential employees
                     obtain their desired career goals. She has an eclectic career background giving her a broader perspective

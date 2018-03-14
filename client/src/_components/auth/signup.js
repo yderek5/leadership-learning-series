@@ -12,7 +12,7 @@ const renderInput=field=>{
         <div className="input-field">
             
             <input {...input} type={type} className="form-control" />
-            <label for= {type} class ="active">{label}</label>
+            <label htmlFor= {type} className="active">{label}</label>
 
             
             <div className="error">{touched?error:''}</div>
