@@ -63,7 +63,7 @@ return [ <nav>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/news">News Letter</a>
+                <a className="nav-link" href="/news">Newsletter</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -130,7 +130,7 @@ return [ <nav>
                 <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/news">News Letter</a>
+                <a className="nav-link" href="/news">Newsletter</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -179,7 +179,6 @@ return [ <nav>
         ];
         } else {
             return [
-
     <nav>
     {this.ulAccount()}
       <div className="nav-wrapper">
@@ -204,8 +203,6 @@ return [ <nav>
     </nav>
 
             ]
-
-
         }
     }
 

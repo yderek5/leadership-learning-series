@@ -3,14 +3,29 @@ import './home.css';
 
 const Home = (props) => {
     return(
-        <div className="container">
-        <p>
-            All Things Career Services (ATCS) offers coaching, training, and consulting solutions 
-            tailored to meet the unique challenges impacting each stage along the employee lifecycle.
-            Our programs range from individuals to company-wide efforts and include
-            hiring strategies, mentoring programs, career development, and/or orgainization
-            training. We maintain a consistent forcus on leadership principles and behaviors across three areas of service:
-        </p>
+        <div>
+        <div className="topInfo">
+            <div className="opacityColor">
+            <div className="row container">
+                <div className="col-md-6 bgColor">
+                        <h5>
+                            All Things Career Services (ATCS) offers coaching, training, and consulting solutions 
+                            tailored to meet the unique challenges impacting each stage along the employee lifecycle.
+                            Our programs range from individuals to company-wide efforts and include
+                            hiring strategies, mentoring programs, career development, and/or orgainization
+                            training. We maintain a consistent focus on leadership principles and behaviors across three areas of service:
+                        </h5>
+                    </div>
+                    <div className="col-md-6 bgColor">
+                        <h5>Please register an account with us to</h5>
+                        <form action="/signup">
+                            <button className="homeBtn btn btn-primary">Get Started</button>
+                        </form>
+                        <h5>We will do our absolute best to give the the career help you need.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br />
         <div className="row">
             <div className="col-md-4">

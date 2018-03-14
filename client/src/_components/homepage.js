@@ -58,7 +58,7 @@ class HomePage extends Component {
                     <Route exact path='/news'>
                     <div className="wrapper">
                     <Title>
-                    News Letter
+                    Newsletter
                     </Title>
                     <News />
                     </div>
