@@ -21,16 +21,17 @@ const Home = (props) => {
                         <form action="/signup">
                             <button className="homeBtn btn btn-primary">Get Started</button>
                         </form>
-                        <h5>We will do our absolute best to give the the career help you need.</h5>
+                        <h5>We will do our absolute best to give the career help you need.</h5>
                     </div>
                 </div>
             </div>
         </div>
         <br />
-        <div className="row">
+
+        <div className="row my-flex-card">
             <div className="col-md-4">
                 <div className="card">
-                    <div className="card-header text-center"><a href="/services/individual"><strong className="cardHeaderText">Individual Career Transition</strong></a></div>
+                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/individual"><strong className="cardHeaderText">Individual Career Transition</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
@@ -45,7 +46,7 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
                 <div className="card">
-                    <div className="card-header text-center"><a href="/services/training"><strong className="cardHeaderText">Leadership Learning Series</strong></a></div>
+                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/training"><strong className="cardHeaderText">Leadership Learning Series</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
@@ -59,7 +60,7 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
                 <div className="card">
-                    <div className="card-header text-center"><a href="/services/consulting"><strong className="cardHeaderText">Consulting Solutions</strong></a></div>
+                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/consulting"><strong className="cardHeaderText">Consulting Solutions</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
@@ -72,6 +73,7 @@ const Home = (props) => {
                     </ul>
                 </div>
             </div>
+            <div className="pad"></div>
         </div>
     </div>
     );
