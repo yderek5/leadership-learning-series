@@ -55,11 +55,13 @@ class Contact extends React.Component {
                         <label className ="active left" htmlFor="message">Message:</label>
                         <textarea onChange={this.onChange} className="form-control materialize-textarea" name="message" rows="3"></textarea>
                     </div>
+
                         <button type="submit" className="btn btn-primary grey lighten-1 waves-effect">Submit</button>
                 </form>
 
 
             </div>
+            <div className="pad"></div>
         </div>
         );
     }

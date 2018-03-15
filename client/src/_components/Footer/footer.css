@@ -9,4 +9,5 @@
     color:white;
     background-color: #3C698D;
     text-align: center;
+    z-index: 999;
   }
