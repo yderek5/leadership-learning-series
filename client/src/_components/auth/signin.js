@@ -50,7 +50,7 @@ class Signin extends Component {
                 {this.renderAlert()}
                 <div className="row">
                   <div className="col s12 center-align">                
-                    <button action="submit" className="btn btn-primary">Sign in</button>
+                    <button action="submit" className="btn btn-primary waves-effect">Sign in</button>
                   </div>
                 </div>                    
             </Form>

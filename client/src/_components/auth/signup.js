@@ -76,7 +76,7 @@ class Signup extends Component {
                 {this.renderAlert()}
                 <div className="row">
                   <div className="col s12 center-align">
-                    <button action="submit" className="btn btn-primary">Sign Up</button>
+                    <button action="submit" className="btn btn-primary waves-effect">Sign Up</button>
                   </div>
                 </div>
             </form>
