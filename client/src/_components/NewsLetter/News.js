@@ -37,7 +37,7 @@ const News = props => {
               </div>    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
               <div className="indicates-required container"><span className="asterisk">*</span> indicates required</div>
               <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_0075976763f0a93a81fdefda0_4aa8e7e108" tabIndex={-1} defaultValue /></div>
-              <div className="clear"style={{position: 'fixed', right: '200px'}} >
+              <div className="clear container" >
               	<input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn btn-primary" />
               	<a href="/"><strong classname="col s12 m6 offset-l6">Go Home</strong></a>
               </div>
