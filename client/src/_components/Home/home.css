@@ -32,9 +32,9 @@ h5 {
   .opacityColor {
     background-color: rgba(37, 37, 37, 0.8);
   }
-  bgColor {
-    background-color: rgba(93, 93, 93, 1);
-  }
+.homeBtn {
+  margin-bottom: 20px;
+}
   .card{
 
     display: inline-block;

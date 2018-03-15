@@ -7,21 +7,25 @@ const Home = (props) => {
         <div className="topInfo">
             <div className="opacityColor">
             <div className="row container">
-                <div className="col-md-6 bgColor">
+                <div className="col-md-12 bgColor">
                         <h5>
-                            All Things Career Services (ATCS) offers coaching, training, and consulting solutions 
-                            tailored to meet the unique challenges impacting each stage along the employee lifecycle.
-                            Our programs range from individuals to company-wide efforts and include
-                            hiring strategies, mentoring programs, career development, and/or orgainization
-                            training. We maintain a consistent focus on leadership principles and behaviors across three areas of service:
+                            All Things Career Services (ATCS) offers coaching, training,
+                            and consulting solutions tailored to meet the unique challenges
+                            along each stage of the employee lifecycle. Our programs range
+                            from individuals to company-wide efforts and include hiring strategies,
+                            mentoring programs, career development, and organiaztional training.
                         </h5>
                     </div>
-                    <div className="col-md-6 bgColor">
-                        <h5>Please register an account with us to</h5>
+                </div>
+                <div className="row container">
+                    <div className="col-md-12 bgColor">
+                        <h5>
+                            Please sign into your account to learn more about how we can help
+                            you and your organization achieve your career goals!
+                        </h5>
                         <form action="/signup">
                             <button className="homeBtn btn btn-primary">Get Started</button>
                         </form>
-                        <h5>We will do our absolute best to give the career help you need.</h5>
                     </div>
                 </div>
             </div>
@@ -35,10 +39,14 @@ const Home = (props) => {
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
-                                ATCS can provide a step-by-step guide to succeeding in the job transition process.
-                                These career strategies can be used by anyone, including those looking to move into
-                                a new career field or leverage a non-traditional education path. 1:1 career coaching
-                                is available to help you identify.
+                                ATCS helps people entering the workforce, changing careers or
+                                reviatalizing an exiting career to find focus and success.
+                                People at any stage of their careers or in a range of
+                                industries can benefit from coaching and our solutions are tailored
+                                to meet your specific need to find a new job, explore future
+                                career options, change jobs, improve leadership skills, or enhance
+                                your current path. <a href='/signin'>Sign into your account</a> to get started with our
+                                free transition guide!
                             </p>
                         </li>
                     </ul>
@@ -50,9 +58,12 @@ const Home = (props) => {
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
-                                Our leadership learning series provides webinars and in person classes featuring a
-                                collection of leadership topics. Courses can be customized to meet specific needs within
-                                an organization and include material from the most relevant and up-to-date research available.
+                            ATCS Leadership Learning Series: ATCS combines real world experiences with 
+                            industry research to create engaging training to motivate and inspire employees. 
+                            Our leadership learning series offers webinars and in person classes across a wide 
+                            range of leadership topics. Need something specific? Courses can be tailored to 
+                            meet organizational needs and will include teaching strategies to connect with any 
+                            type of learner. <a href='/signin'>Sign into your account</a> to review our current schedule.
                             </p>
                         </li>
                     </ul>
@@ -64,10 +75,13 @@ const Home = (props) => {
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
-                                Strategic consulting products bring organization to ambiguous situations. We work with you 
-                                to understand your pain points and determine the best path to resolution. ATCS provides a
-                                range of options, including research based recommendations to a planned program that can 
-                                remain in-house, or be executed by ATCS.
+                            ATCS Consulting: ATCS provides strategic consulting experience to bring order to any 
+                            ambiguous environment. We work to understand pain points, desired outcomes, and the 
+                            best value-based path to help your organization achieve resolution. ATCS provides a 
+                            range of customizable options, including research based recommendations for growth 
+                            to a structured program that can be executed in-house or by ATCS. 
+                            <a href='/signin'>Sign into your account</a> to set up a free 30-min intro with our team!
+
                             </p>
                         </li>
                     </ul>

@@ -5,7 +5,7 @@ const About = (props) => {
     return(
 <div className="text-center">
 <h1> </h1>
-    <div className="container">
+    <div className="container topMargin">
         <div className="row">
             <div className="col-md-3 text-right">
                 <img className="round-pic" src={lisa} alt="Lisa Parrot" />
