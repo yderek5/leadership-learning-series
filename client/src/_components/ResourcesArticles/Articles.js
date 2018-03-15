@@ -4,7 +4,7 @@ import Title from "./../TitleBanner";
 
 const Articles = (props) => {
     return(
-        <div>
+        <div className="container">
         <Title>
         Articles & Videos
         </Title>
