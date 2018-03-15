@@ -35,3 +35,15 @@ h5 {
   bgColor {
     background-color: rgba(93, 93, 93, 1);
   }
+  .card{
+
+    display: inline-block;
+  }
+  .pad{
+  margin: 50px;
+  padding-top: 100px;
+}
+.my-flex-card > div > div.card {
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+}
