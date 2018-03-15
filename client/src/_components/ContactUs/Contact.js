@@ -3,7 +3,7 @@ import './contact.css';
 import axios from 'axios';
 
 class Contact extends React.Component {
-    // set the state equal to what the form will be sending (empty for now)
+    // set the state as an empty JSON object that the server will recieve on submit
     constructor() {
         super();
         this.state = {
@@ -18,7 +18,7 @@ class Contact extends React.Component {
         state[e.target.name] = e.target.value;
         this.setState(state)
     }
-    // on submit post to the express route where the email is sent  -- THIS WAS A BITCH TO DO
+    // on submit post to the express route where the email is sent
     onSubmit = (e) => {
         e.preventDefault();
 
