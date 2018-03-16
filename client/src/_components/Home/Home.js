@@ -33,9 +33,9 @@ const Home = (props) => {
         <br />
 
         <div className="row my-flex-card">
-            <div className="col-md-4">
+            <div className="col-md-4 textcenter">
                 <div className="card">
-                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/individual"><strong className="cardHeaderText">Individual Career Transition</strong></a></div>
+                    <div className="card-header text-center"><a href="/services/individual"><strong className="cardHeaderText">Individual Career Transition</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
@@ -52,9 +52,9 @@ const Home = (props) => {
                     </ul>
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 textcenter">
                 <div className="card">
-                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/training"><strong className="cardHeaderText">Leadership Learning Series</strong></a></div>
+                    <div className="card-header text-center "><a href="/services/training"><strong className="cardHeaderText">Leadership Learning Series</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
@@ -69,9 +69,9 @@ const Home = (props) => {
                     </ul>
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 textcenter">
                 <div className="card">
-                    <div className="card-header text-center d-flex align-items-stretch"><a href="/services/consulting"><strong className="cardHeaderText">Consulting Solutions</strong></a></div>
+                    <div className="card-header text-center"><a href="/services/consulting"><strong className="cardHeaderText textcenter">Consulting Solutions</strong></a></div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <p>
