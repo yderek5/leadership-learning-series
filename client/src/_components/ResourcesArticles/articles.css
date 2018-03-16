@@ -1,3 +1,45 @@
-.marginTop {
+  .cardHeaderText {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 50;
+    color: white;
+    }
+  
+  .card-header {
+    background-color: #3C698D;
+  }
+
+  .marginTop {
     margin-top: 2.5%;
   }
+ 
+h5 {
+  color:white
+}
+  .topTitle {
+    color:rgb(255, 255, 255);
+    margin-bottom: 0px;
+  }
+
+  .container {
+    margin-bottom: 0px;
+  }
+
+  .opacityColor {
+    background-color: rgba(37, 37, 37, 0.8);
+  }
+.homeBtn {
+  margin-bottom: 20px;
+}
+  .card{
+	width:400px;
+    display: inline-block;
+  }
+  .pad{
+  margin: 50px;
+  padding-top: 100px;
+}
+.my-flex-card > div > div.card {
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+}

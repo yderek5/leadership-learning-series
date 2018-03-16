@@ -9,8 +9,7 @@ import {
 
 export function signInAction(history, { email, password }) {
     return async (dispatch) => {
-      //  try {
-      //  const res = await axios.post('/users/authenticate', { email, password });
+
         //submit email and password to the server
         axios.post('/users/authenticate', { email, password })
             .then( res => {
@@ -65,7 +64,7 @@ export function signOutAction() {
 }
 
 // this function is for fetching info from the express server that requires authentication header
-//TODO: revise later with user profile info
+
 export function fetchMessage(){
     return function(dispatch){
         axios.get('/',{

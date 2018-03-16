@@ -17,7 +17,6 @@ const renderInput = field => {
 
 class Signin extends Component {
     handleFormSubmit ({ email, password }) {
-        console.log(email,password); //TODO delete this line after you finish testing
         this.props.signInAction({email, password});
     }
 

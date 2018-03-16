@@ -7,3 +7,10 @@
 .topMargin {
   margin-top: 20px;
 }
+blockquote{
+  border-left: solid #3c698d; /* Just change the color value and that's it*/
+}
+
+.flow-text {
+    font-size: 18px;
+}
