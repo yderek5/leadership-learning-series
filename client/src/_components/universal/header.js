@@ -39,9 +39,6 @@ class Header extends Component {
                 <a className="nav-link" href="/admin">Admin</a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="/news">Newsletter</a>
-              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">
@@ -106,9 +103,7 @@ class Header extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/news">Newsletter</a>
-              </li>
+            
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">
@@ -172,9 +167,6 @@ class Header extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/news">Newsletter</a>
-              </li>
               
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact Us</a>
@@ -200,7 +192,7 @@ class Header extends Component {
     render() {
         return(
             <nav className="navbar navbar-light">
-                <Link to='/' className="navbar-brand"> Mern Authentication </Link>
+                <Link to='/' className="navbar-brand"> </Link>
                 <ul className="nav navbar-nav">
                     {this.renderLinks()}
                 </ul>
