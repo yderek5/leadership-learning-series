@@ -79,8 +79,7 @@ const Home = (props) => {
                             ambiguous environment. We work to understand pain points, desired outcomes, and the 
                             best value-based path to help your organization achieve resolution. ATCS provides a 
                             range of customizable options, including research-based recommendations for growth 
-                            to a structured program that can be executed in-house or by ATCS.   
-                            <a href='/signin'>Sign into your account</a> to set up a free 30-min intro with our team!
+                            to a structured program that can be executed in-house or by ATCS. <a href='/signin'>  Sign into your account</a> to set up a free 30-min intro with our team!
                             </p>
                         </li>
                     </ul>
