@@ -22,7 +22,7 @@ const About = (props) => {
                     <blockquote>A Mission Continues Fellowship Alumni</blockquote>
                     <blockquote>A recurring speaker for Hiring Our Heroes Corporate Fellowship Program</blockquote>
                     <blockquote>Selected as a member of 2013 Civilian Jobs Military Top 40 Under 40</blockquote>
-                    <blockquote>Created the monthly Seattle Marine For Life networking event in June 2012 (and it’s still going strong
+                    <blockquote>Created the monthly Seattle Marine for Life networking event in June 2012 (and it’s still going strong
                         today!)
                     </blockquote>
                     <blockquote>A presenter to the Above and Beyond Seminar for Hope for the Warriors</blockquote>
@@ -49,7 +49,7 @@ const About = (props) => {
                     <br /> College isn’t for everyone, but Dr. Lisa loves learning new things:
                 </p>
                 
-                    <blockquote>Argosy University, Doctorate of Education in Organizational Leadership, 2014</blockquote>
+                    <blockquote>Argosy University, Doctor of Education in Organizational Leadership, 2014</blockquote>
                     
                         <blockquote>Dissertation: A Quantitative Study of the Effects of Mentorship During Military Transition on Time
                             to Employment</blockquote>

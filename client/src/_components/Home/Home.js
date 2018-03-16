@@ -40,7 +40,7 @@ const Home = (props) => {
                         <li className="list-group-item">
                             <p>
                                 ATCS helps people entering the workforce, changing careers or
-                                reviatalizing an exiting career to find focus and success.
+                                revitalizing an existing career to find focus and success.
                                 People at any stage of their careers or in a range of
                                 industries can benefit from coaching and our solutions are tailored
                                 to meet your specific need to find a new job, explore future
@@ -78,10 +78,9 @@ const Home = (props) => {
                             ATCS Consulting: ATCS provides strategic consulting experience to bring order to any 
                             ambiguous environment. We work to understand pain points, desired outcomes, and the 
                             best value-based path to help your organization achieve resolution. ATCS provides a 
-                            range of customizable options, including research based recommendations for growth 
-                            to a structured program that can be executed in-house or by ATCS. 
+                            range of customizable options, including research-based recommendations for growth 
+                            to a structured program that can be executed in-house or by ATCS.   
                             <a href='/signin'>Sign into your account</a> to set up a free 30-min intro with our team!
-
                             </p>
                         </li>
                     </ul>
