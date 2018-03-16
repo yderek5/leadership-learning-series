@@ -9,6 +9,7 @@ const passport =  require('passport');
 require('dotenv').config();
 
 // Connect to Database
+console.log("This is the node env " + process.env.NODE_ENV);
 mongoose.connect(config.database);
 
 // On Connection

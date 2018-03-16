@@ -39,7 +39,7 @@ const Articles = (props) => {
                             </li>
                             <li className="list-group-item">
                                 <a target="_blank" href="https://www.slideshare.net/kocharsimardeep/the-2-hour-job-search-book-summary-63004716">
-                                    <p>2 Hour Job Search Powerpoint</p>
+                                    <p>2 Hour Job Search PowerPoint</p>
                                 </a>
                             </li>
                         </ul>
@@ -48,7 +48,7 @@ const Articles = (props) => {
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-header text-center d-flex align-items-stretch">
-                            <strong className="cardHeaderText">Where to Start With Your Resume</strong>
+                            <strong className="cardHeaderText">Where to Start with Your Resume</strong>
                         </div>
                         <ul className="list-group list-group-flush text-center">
                             <li className="list-group-item">
@@ -109,7 +109,7 @@ const Articles = (props) => {
                             </li>
                             <li className="list-group-item">
                                 <a target="_blank" href="http://www.thestartupofyou.com/wp-content/themes/startupofyoutheme2012/img/TheStart-UpofYou-AdvancedLinkedInTips.pdf">
-                                    <p>Advanced Linkedin Tips</p>
+                                    <p>Advanced LinkedIn Tips</p>
                                 </a>
                             </li>
                             <li className="list-group-item">
@@ -140,7 +140,7 @@ const Articles = (props) => {
                                 </a>-Video Collection
                             </li>
                             <li className="list-group-item">
-                                <p>These are stand alone segments from the Glassdoor series above</p>
+                                <p>These are standalone segments from the Glassdoor series above</p>
                                 <a target="_blank" href="https://www.youtube.com/watch?v=u-sTOZ8dm5Y">
                                     <p>50 Most Common Interview Questions</p>
                                 </a>-Video
