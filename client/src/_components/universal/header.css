@@ -3,7 +3,7 @@
 	max-width: 60px;
 	padding-right: 10px;
 }
-.navbar{
+nav.navbar{
 	background-color: white;
 	height: 150px;
 }
@@ -25,4 +25,25 @@ nav ul li:hover {
 .navbarLinks{
 	background-color: #babbbd;
 
+}
+
+nav.navbar{
+	 -webkit-transition: all 0.4s ease;
+	 transition: all 0.4s ease;
+  }
+
+nav.navbar.shrink {
+	height: 50px;
+}
+#navbarSupportedContent.shrink {
+	height: 45px;
+		-webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+}
+a.nav-link.shrink {
+	height: 45px;
+	padding: 0px;
+}
+img.logo.shrink {
+	height: 45px;
 }
