@@ -61,5 +61,19 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
     res.json({user: req.user});
 });
 
+// This gets all users for the admin page
+router.get('/getAllUsers', function(req, res, next) {
+    let userList = [];
+    User.find({}, function(err, users) {
+        if(err) throw err;
+        else {
+            users.map(function(user) {
+                userList.push(user);
+            });
+            res.json(userList);
+        }
+    })
+});
+
 
 module.exports = router;

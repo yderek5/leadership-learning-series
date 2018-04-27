@@ -5,9 +5,8 @@ const Home = (props) => {
     return(
         <div>
         <div className="topInfo">
-            <div className="opacityColor">
             <div className="row container">
-                <div className="col-md-12 bgColor">
+                <div className="col-md-12">
                         <h5>
                             All Things Career Services (ATCS) offers coaching, training,
                             and consulting solutions tailored to meet the unique challenges
@@ -28,7 +27,6 @@ const Home = (props) => {
                         </form>
                     </div>
                 </div>
-            </div>
         </div>
         <br />
 

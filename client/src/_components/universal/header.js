@@ -17,7 +17,7 @@ class Header extends Component {
 
     renderLinks() {
         if(this.props.authenticated && this.state.adminEmail === "allthingscareerconsulting@gmail.com") {
-        return [
+        return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,12 +33,11 @@ class Header extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="/admin">Admin</a>
               </li>
-
+              <li className="nav-item">
+                <a className="nav-link" href="/about">About</a>
+              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">
@@ -83,9 +82,9 @@ class Header extends Component {
           </div>
         </nav>
 
-        ];
+        );
         } else if (this.props.authenticated && this.state.adminEmail !== "allthingscareerconsulting@gmail.com") {
-        return [
+        return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -148,9 +147,9 @@ class Header extends Component {
           </div>
         </nav>
 
-        ];
+        );
         } else {
-            return [
+            return (
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo" /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -185,7 +184,7 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
-            ];
+            );
         }
     }
 

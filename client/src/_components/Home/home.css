@@ -13,7 +13,7 @@
     margin-top: 2.5%;
   }
   .topInfo {
-    background-image: url('./header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./header.jpg') fixed;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -29,9 +29,6 @@ h5 {
     margin-bottom: 0px;
   }
 
-  .opacityColor {
-    background-color: rgba(37, 37, 37, 0.8);
-  }
 .homeBtn {
   margin-bottom: 20px;
 }

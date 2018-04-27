@@ -23,12 +23,13 @@
     "concurrently": "^3.5.1",
     "cors": "2.8.4",
     "dotenv": "^5.0.1",
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "jsonwebtoken": "*",
     "mongoose": "^4.13.9",
     "mongoose-unique-validator": "^1.0.6",
     "nodemailer": "^4.6.0",
     "nodemon": "^1.14.7",
+    "npm": "^6.0.0",
     "passport": "*",
     "passport-jwt": "*"
   }

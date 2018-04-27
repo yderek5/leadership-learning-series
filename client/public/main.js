@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 // ===========================================================================
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
+    if ($(document).scrollTop() > 1) {
       $('nav').addClass('shrink');
       $('#navbarSupportedContent').addClass('shrink');
       $('.nav-link').addClass('shrink');
@@ -19,4 +19,4 @@ $(window).scroll(function() {
       $('.logo').removeClass('shrink');
     }
   });
-})
+});
