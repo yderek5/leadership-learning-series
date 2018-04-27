@@ -4,3 +4,4 @@ node_modules/
 *.orig
 .idea/
 .vscode/
+todo.js

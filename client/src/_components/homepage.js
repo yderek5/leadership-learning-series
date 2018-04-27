@@ -108,6 +108,7 @@ class HomePage extends Component {
                     <Purchases />
                     </div>
                     </Route>
+                    
                     <Route path="/services/individual" component = {RequireAuth(ServicesIndividual)} />
                     <Route path="/services/consulting" component = {RequireAuth(ServicesConsulting)} />
                     <Route path="/services/training" component = {RequireAuth(ServicesTraining)} />

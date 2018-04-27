@@ -8,7 +8,7 @@ const Worksheets = (props) => {
 	<Title>
     Worksheets
     </Title>
-		<h2 class ="marginTop">Coming soon! Handy guidelines for your career development.</h2>
+		<h2>Coming soon! Handy guidelines for your career development.</h2>
 	</div>
     )
 }
