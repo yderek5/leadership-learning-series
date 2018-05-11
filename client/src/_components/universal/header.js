@@ -44,8 +44,7 @@ class Header extends Component {
                   Services
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/services/individual">Individual</a>
-                  <div className="dropdown-divider"></div>
+                 {/* THE SERVICES/INDIVIDUAL GOES HERE */}
                   <a className="dropdown-item" href="/services/training">Training</a>
                   <div className="dropdown-divider"></div>
                   <a className="dropdown-item" href="/services/consulting">Consulting</a>
@@ -73,8 +72,8 @@ class Header extends Component {
                   Account
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/purchases">Purchases</a>
-                  <div className="dropdown-divider"></div>
+                  {/*<a className="dropdown-item" href="/purchases">Purchases</a>
+                  <div className="dropdown-divider"></div>*/}
                   <a className="dropdown-item" href="/signout">Logout</a>
                 </div>
                 </li>
@@ -109,8 +108,7 @@ class Header extends Component {
                   Services
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/services/individual">Individual</a>
-                  <div className="dropdown-divider"></div>
+                {/* SERVICES/INDIVIDUAL GOES HERE */}
                   <a className="dropdown-item" href="/services/training">Training</a>
                   <div className="dropdown-divider"></div>
                   <a className="dropdown-item" href="/services/consulting">Consulting</a>

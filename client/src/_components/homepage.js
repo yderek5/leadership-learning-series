@@ -13,7 +13,6 @@ import About from "./About";
 import News from "./NewsLetter";
 import Home from "./Home";
 import RequireAuth from './auth/require_auth';
-import ServicesIndividual from "./ServicesIndividual";
 import ServicesConsulting from "./ServicesConsulting";
 import ServicesTraining from "./ServicesTraining";
 import ResourcesArticles from "./ResourcesArticles";
@@ -109,7 +108,6 @@ class HomePage extends Component {
                     </div>
                     </Route>
                     
-                    <Route path="/services/individual" component = {RequireAuth(ServicesIndividual)} />
                     <Route path="/services/consulting" component = {RequireAuth(ServicesConsulting)} />
                     <Route path="/services/training" component = {RequireAuth(ServicesTraining)} />
 

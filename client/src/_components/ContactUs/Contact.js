@@ -35,9 +35,8 @@ class Contact extends React.Component {
             <div>
                 <div className="text-center">
                 <div className="calendly-inline-widget calendly" data-url="https://calendly.com/allthingscareerconsulting/30min"></div>
-               
-                <br /> <h5>Not enough time to chat?</h5>
-                       <h5>Shoot us an Email!</h5>
+                <h4>Not enough time to chat? No problem!</h4>
+                <p>Fill out the form below and we will be in contact with you soon.</p>
             </div>
             <div className="container text-center input-field" id="formArea">
                 <form id="contact-form" onSubmit={this.onSubmit} >
