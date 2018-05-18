@@ -12,7 +12,7 @@ class Contact extends React.Component {
             message: ''
         }
     }
-    // whenver a form field is changed update the state of that target name
+    // whenever a form field is changed update the state of that target name
     onChange = (e) => {
         const state = this.state;
         state[e.target.name] = e.target.value;
